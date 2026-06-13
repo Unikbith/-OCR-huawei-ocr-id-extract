@@ -1,0 +1,15 @@
+/* 容器样式，确保占满整个屏幕 */
+.container {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    width: 100vw; /* 视口宽度 */
+    height: 100vh; /* 视口高度 */
+    background-color: #f0f0f0; /* 背景色（可选） */
+  }
+  
+  /* 图片样式 */
+  .large-image {
+    width: 100%; /* 图片宽度占满容器 */
+    height: 100%; /* 高度自适应 */
+  }

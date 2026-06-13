@@ -1,0 +1,7 @@
+<!--pages/problem/index.wxml-->
+<view>
+  <text class="problem">为什么没有线上模式？</text>
+    <view>
+      <text class="answer">管理员还未认证</text>
+    </view>
+</view>

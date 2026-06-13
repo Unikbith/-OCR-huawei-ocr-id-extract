@@ -1,0 +1,6 @@
+<!--pages/vip/vip.wxml-->
+<text>暂未开发此功能，敬请期待！</text>
+
+<view class="container">
+  <button type="primary" bindtap="testCORS">测试跨域请求</button>
+</view>

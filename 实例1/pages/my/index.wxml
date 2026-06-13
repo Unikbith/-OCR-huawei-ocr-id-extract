@@ -1,0 +1,68 @@
+<!--pages/my/index.wxml-->
+<view class="my-tips">
+  <text>禁止提交违反法律法规内容，共建绿色安全网络环境</text>
+</view>
+
+<view class="user-image"> 
+  <image src="{{userInfo.avatarUrl}}" mode="aspectFill" class="headshot" bindtap="login" />
+  <view style="font-size: medium; padding-top: 70rpx; padding-left: 35rpx;">
+    <text>{{userInfo.nickName}}</text>
+    <text style="font-size:small; padding-left: 10rpx; color:	#FF8C00;">非会员</text>
+    <view>
+      <text style="font-size: small;">金币余额:{{money}}</text>
+    </view>
+  </view>
+</view>
+
+<navigator url="/pages/vip/vip">
+  <view class="menu">
+    <image src="/images/开通会员.png" class="icon" />
+    <view style="font-size: medium; padding-top: 20rpx; padding-left: 10rpx;">
+      <text>开通会员</text>
+    </view>
+    <image src="/images/箭头 左 小.png" class="icon-left"/>
+  </view>
+</navigator>
+
+<view class="menu">
+  <image src="/images/记录.png" class="icon" />
+  <view style="font-size: medium; padding-top: 20rpx; padding-left: 10rpx;">
+    <text>识别记录</text>
+  </view>
+  <image src="/images/箭头 左 小.png" class="icon-left"/>
+</view>
+
+<view class="menu" bind:tap="checkmoney">
+  <image src="/images/签到.png" class="icon" />
+  <view style="font-size: medium; padding-top: 20rpx; padding-left: 10rpx;">
+    <text>领取金币</text>
+  </view>
+  <image src="/images/箭头 左 小.png" class="icon-left"/>
+</view>
+
+<navigator url="/pages/problem/index">
+<view class="menu">
+  <image src="/images/问题.png" class="icon" />
+  <view style="font-size: medium; padding-top: 20rpx; padding-left: 10rpx;">
+    <text>常见问题</text>
+  </view>
+  <image src="/images/箭头 左 小.png" class="icon-left"/>
+</view>
+</navigator>
+
+<navigator url="/pages/relate/relate">
+  <view class="menu">
+    <image src="/images/联系我们-QQ.png" class="icon" />
+    <view style="font-size: medium; padding-top: 20rpx; padding-left: 10rpx;">
+      <text>联系我们</text>
+    </view>
+    <image src="/images/箭头 左 小.png" class="icon-left"/>
+  </view>
+</navigator>
+
+<view style="text-align: center; color: #8B8989;">
+  <text style="font-size: smaller;">- 学习工具 -</text>
+  <view>
+    <text style="font-size: smaller;">v1.0.0</text>
+  </view>
+</view>

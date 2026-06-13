@@ -1,0 +1,42 @@
+<!--index.wxml-->
+<swiper autoplay indicator-dots indicator-color="#FFC0CB" circular class="swiper-mita">
+  <swiper-item>
+    <image src="/images/mita/1.png" mode="aspectFit" show-menu-by-longpress></image>
+  </swiper-item>
+  <swiper-item>
+    <image src="/images/mita/2.png" mode="aspectFit" show-menu-by-longpress></image>
+  </swiper-item>
+  <swiper-item>
+    <image src="/images/mita/3.png" mode="aspectFit" show-menu-by-longpress></image>
+  </swiper-item>
+
+</swiper>
+
+<view class="tips">
+  <text class="iconfont icon-tishi"></text>
+  <view class="scroll-text">欢迎体验,只用于学习和完成作业</view>
+</view>
+
+<view class="button">
+  <button class="select1" bindtap="chooseImage">上传/拍照</button>
+  <image src="{{imagePath}}" mode="aspectFit" bindtap="uploadImage" wx:if="{{imagePath}}"></image>
+  <button class="select" open-type="share">分享给朋友</button>
+</view>
+
+
+<view class="menu">
+  <view class="item" bind:tap="uploadImageToServer1">
+    <image src="/images/身份证.png" class="img" />
+    <text class="title">身份证识别</text>
+  </view>
+  <view class="item" bind:tap="uploadImageToServer2">
+    <image src="/images/文字识别.png" class="img" />
+    <text class="title">图片文字提取</text>
+  </view>
+  <navigator url="/pages/vip/vip">
+  <view class="item">
+    <image src="/images/AI对话.png" class="img" />
+    <text class="title">AI对话</text>
+  </view>
+  </navigator>
+</view>

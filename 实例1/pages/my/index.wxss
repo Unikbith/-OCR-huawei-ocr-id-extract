@@ -1,0 +1,44 @@
+/* pages/my/index.wxss */
+page{
+    background-color:#EEE9E9;
+}
+.my-tips{
+        background-color:#FFEC8B;
+        font-size: 30rpx;
+        color:#FF8C00;
+        border-radius: 50rpx;
+        padding-left: 20rpx;
+        text-align: center;
+}
+.user-image{
+    display: flex;
+    background-color: white;
+    height: 200rpx;
+    margin-bottom: 30rpx;
+}
+.menu{
+    display: flex;
+    background-color: white;
+    height: 80rpx;
+    margin-bottom: 30rpx;
+}
+.headshot{
+    position: relative;
+    top: 20rpx;
+    left: 20rpx; 
+    width: 160rpx;
+    height: 160rpx;
+    border-radius: 80rpx;
+}
+.icon{
+    height: 35rpx;
+    width: 35rpx;
+    padding-top:24rpx;
+    padding-left: 30rpx;
+}
+.icon-left{
+    height: 40rpx;
+    width: 40rpx;
+    padding-top:15rpx;
+    padding-left: 500rpx;
+}

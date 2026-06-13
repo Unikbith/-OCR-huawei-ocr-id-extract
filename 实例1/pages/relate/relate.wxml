@@ -1,0 +1,3 @@
+<view class="container">
+  <image src="/images/qq.jpg" mode="aspectFit" class="large-image"/>
+</view>
